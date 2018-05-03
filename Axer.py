@@ -6,7 +6,7 @@ import urllib
 import requests
 
 def verif():
-    if not os.path.exists('c:/metasploit') or os.path.exists('/usr/share/locale/metasploit-framework'):
+    if not os.path.exists('c:/metasploit-framework') or os.path.exists('/usr/share/locale/metasploit-framework'):
         if os.name == 'nt':
             urllib.urlopen('https://downloads.metasploit.com/data/releases/metasploit-latest-windows-x64-installer.exe')
         else:
